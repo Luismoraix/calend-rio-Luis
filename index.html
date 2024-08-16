@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário Avançado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="header">
+            <button id="prevMonth">&lt;</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">&gt;</button>
+        </div>
+        <div id="calendar"></div>
+        <div id="event-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>Adicionar Evento</h3>
+                <form id="event-form">
+                    <label for="event-date">Data:</label>
+                    <input type="date" id="event-date" required>
+                    <label for="event-description">Descrição:</label>
+                    <input type="text" id="event-description" required>
+                    <button type="submit">Adicionar Evento</button>
+                </form>
+                <h3>Eventos do Dia:</h3>
+                <ul id="event-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
